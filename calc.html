@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="calc.js"></script>
+   <style>
+        body {
+            background-color: plum;
+            text-align: center;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 200px;
+            margin: auto;
+            border: 8px solid #333;
+            border-radius: 10px;
+        }
+        input {
+            border-radius: 8px;
+            padding: 8px;
+            margin: 5px 0;
+        }
+       button {
+            background-color: paleturquoise;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+ <form>
+        <input type="text" placeholder="First Number" id="num1"><br>
+        <input type="text" placeholder="Second Number" id="num2"><br>
+        <input type="text" placeholder="Third Number" id="num3"><br>
+       <select name="symbol" id="operator">
+        <option value="sub">-</option>
+        <option value="mul">x</option>
+        <option value="add">+</option>
+       <option value="div">/</option>
+     </select><br>
+<button type="button" id="calculateBtn" onclick="calc()">Calculate</button><br>
+<input type="text" id="result" placeholder="Result">
+    </form>
+</body>
+</html> 
